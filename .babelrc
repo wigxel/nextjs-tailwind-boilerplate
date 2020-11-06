@@ -1,0 +1,26 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@libs": "./libs",
+          "@styles": "./styles",
+          "@hooks" : "./hooks",
+          "@stores" : "./stores",
+          "@components": "./components",
+          "@wg": "@wigxel/react-components/lib"
+        }
+      }
+    ],
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ]
+}
