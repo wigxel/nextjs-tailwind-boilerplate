@@ -1,5 +1,5 @@
 {
-  "name": "grenthumb",
+  "name": "wigxel-nextjs-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -42,6 +42,7 @@
     "husky": "^4.2.1",
     "watch": "^1.0.2"
   },
+  "keywords": ["wigxel", "boilerplate", "nextjs"],
   "husky": {
     "hooks": {
       "pre-commit": "clear && npm run -s lint",
