@@ -15,7 +15,7 @@
     "@wigxel/utils": "^1.0.8",
     "axios": "^0.21.1",
     "date-fns": "^2.16.1",
-    "next": "^10.0.5",
+    "next": "^11.1.2",
     "postcss": "^8.2.4",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
@@ -25,7 +25,7 @@
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.14.2",
     "styled-components": "^5.0.1",
-    "tailwindcss": "^2.0.2",
+    "tailwindcss": "^2.2.15",
     "yup": "^0.32.8"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-styled-components": "^1.10.7",
-    "eslint": "^6.8.0",
+    "eslint": "7",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
@@ -42,7 +42,11 @@
     "husky": "^4.2.1",
     "watch": "^1.0.2"
   },
-  "keywords": ["wigxel", "boilerplate", "nextjs"],
+  "keywords": [
+    "wigxel",
+    "boilerplate",
+    "nextjs"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "clear && npm run -s lint",
