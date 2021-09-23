@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix . && echo 'Lint complete.'",
+    "lint": "next lint && echo 'Lint complete.'",
     "watch": "watch 'clear && npm run -s lint' pages components"
   },
   "dependencies": {
@@ -35,6 +35,7 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-styled-components": "^1.10.7",
     "eslint": "7",
+    "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
