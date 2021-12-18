@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
+        <h1 className="title text-[#FFC0CB]">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
