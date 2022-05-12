@@ -1,4 +1,4 @@
-export default {
+const Theme = {
   primary: "olivedrab",
   colors: {
     primary: "#00A75D",
@@ -24,3 +24,5 @@ export default {
     inactive: "white",
   },
 };
+
+export default Theme;
