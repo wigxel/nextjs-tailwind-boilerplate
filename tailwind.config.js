@@ -1,8 +1,13 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   content: ["./components/**/*.(js|ts|tsx)", "./pages/**/*.(js|ts|tsx)"],
   theme: {
     extend: {
+      fontFamily: {
+        body: ["var(--font-body)", ...fontFamily.sans],
+      },
       colors: {
         primary: "#00A75D",
         accent: "",
