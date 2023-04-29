@@ -2,3 +2,6 @@ package-lock.json
 .next
 node_modules/
 out/
+.vscode/
+.swcrc
+tsconfig.json
