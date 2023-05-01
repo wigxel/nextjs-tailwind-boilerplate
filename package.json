@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint && echo 'Lint complete.'",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "svg:convert": "npx @svgr/cli --icon --typescript --ignore-existing --memo --out-dir ./components/Icons -- public/assets/icons",
     "watch": "watch 'clear && npm run -s lint' pages components",
     "prepare": "husky install"
@@ -32,6 +34,8 @@
   },
   "devDependencies": {
     "@svgr/cli": "^6.5.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
     "autoprefixer": "^10.4.0",
@@ -42,12 +46,18 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^7.0.4",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "lint-staged": "^13.2.2",
     "postcss": "^8.4.5",
     "postcss-preset-env": "^6.7.0",
     "watch": "^1.0.2"
   },
-  "keywords": ["wigxel", "boilerplate", "nextjs"],
+  "keywords": [
+    "wigxel",
+    "boilerplate",
+    "nextjs"
+  ],
   "lint-staged": {
     "*/**": "prettier --write --ignore-unknown"
   }
