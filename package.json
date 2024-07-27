@@ -1,0 +1,54 @@
+{
+  "name": "wigxel-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && echo 'Lint complete.'",
+    "svg:convert": "npx @svgr/cli --icon --typescript --ignore-existing --memo --out-dir ./components/Icons -- public/assets/icons",
+    "watch": "watch 'clear && npm run -s lint' pages components",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^1.0.0",
+    "@svgr/cli": "^6.5.1",
+    "@wigxel/react-components": "^1.2.3",
+    "@wigxel/utils": "^1.0.8",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.16.1",
+    "effect": "^3.5.8",
+    "eslint": "8",
+    "eslint-config-next": "14.2.5",
+    "next": "^14.2.5",
+    "postcss": "^8.4.5",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
+    "ramda": "^0.27.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^6.14.2",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/ramda": "^0.30.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "18",
+    "autoprefixer": "^10.4.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^7.0.4",
+    "watch": "^1.0.2"
+  },
+  "keywords": [
+    "wigxel",
+    "boilerplate",
+    "nextjs"
+  ]
+}
