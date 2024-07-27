@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-clear && npm run -s lint
+pnpm format &&
+pnpm run -s lint &&
+echo "Pre-commit task complete"
+
