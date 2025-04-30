@@ -1,5 +1,5 @@
 import postcssPresetEnv from "postcss-preset-env";
-import tailwindcss from "tailwindcss";
+import tailwindcss from "@tailwindcss/postcss";
 import autoprefixer from "autoprefixer";
 
 const config = ('VITEST' in process.env) ?
