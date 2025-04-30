@@ -19,7 +19,7 @@ export default defineConfig({
         process.env.NEXT_PUBLIC_ALCHEMY_API_KEY,
       ),
     },
-    setupFiles: "./tests/setup.ts",
+    // setupFiles: "./tests/setup.ts",
     reporters: ["verbose"],
     environment: "jsdom",
     coverage: {

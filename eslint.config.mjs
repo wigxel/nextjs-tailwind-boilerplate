@@ -18,6 +18,7 @@ const eslintConfig = [
       "pages/*",
       "utils/*",
       "lib/web3-connect/*",
+      "**/__tests__/*",
       "tests/setup.ts",
       "**/*.test.ts",
       "**/*.test.tsx",
