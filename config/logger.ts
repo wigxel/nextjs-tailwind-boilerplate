@@ -1,7 +1,7 @@
-import { type ConsolaReporter, createConsola, LogLevels } from "consola"
-import { APP_LOG_LEVEL } from "~/config/constants"
+import { type ConsolaReporter, createConsola, LogLevels } from "consola";
+import { APP_LOG_LEVEL } from "~/config/constants";
 
-export type LogLevel = keyof typeof LogLevels
+export type LogLevel = keyof typeof LogLevels;
 
 export const logger = createConsola({
   level: LogLevels[APP_LOG_LEVEL],
@@ -11,7 +11,7 @@ export const logger = createConsola({
     compact: true,
     date: false,
   },
-})
+});
 
 // Create a reporter to forward error logs to Sentry
 // import { captureException, captureMessage } from "@sentry/nextjs"
