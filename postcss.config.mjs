@@ -1,20 +1,10 @@
-import postcssPresetEnv from "postcss-preset-env";
-import tailwindcss from "tailwindcss";
-import autoprefixer from "autoprefixer";
-
-const config = ('VITEST' in process.env) ?
-  {
-    plugins: [
-      autoprefixer,
-      tailwindcss,
-      postcssPresetEnv
-    ]
-  } : {
-    plugins: [
-      "postcss-preset-env",
-      "tailwindcss",
-      "autoprefixer",
-    ]
-  };
+const config =
+  "VITEST" in process.env
+    ? {
+        plugins: [],
+      }
+    : {
+        plugins: ["postcss-import", "@tailwindcss/postcss", "autoprefixer"],
+      };
 
 export default config;
