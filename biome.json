@@ -8,12 +8,7 @@
   "files": {
     "ignoreUnknown": false,
     "ignore": [
-      "abis/**",
-      ".next/**/*",
-      ".zed/**/*",
-      "components/icons/**",
-      "components/wallet/avatars",
-      "./**/__tests__/**/*.ts"
+      ".next/**/*"
     ]
   },
   "formatter": {
